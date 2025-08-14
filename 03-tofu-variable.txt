@@ -1,0 +1,26 @@
+## We can define the variabes in below files to make the code dynamic.
+--> use 03_main_variable.tf file where filename and content are defined as vaiables.
+
+--> values for these variabes are defined in below file:
+1) variabes.tf
+2) path4cloud.tfvars
+3) bin.auto.tfvars
+4) or we can defined as Environment variabes like:
+    # TF_VAR_<variabes_name> and we can export this before we run tofu apply command.
+
+########
+vaiables Precdence:
+    - If you have defined a value to variable in many ways, then which value will be
+    considered finally.
+    - Let say, we have defined a variable value as environment variable, in terraform.tfvars, in
+    variable.auto.tfvars and specified with apply command as well with –var flag.
+    - Then as per above case, first it will pick the environment variable then terraform.tfvars
+    and then *auto.tfcars but in alphatical order if defined many, and finally command line
+    flag, -var or –var-file. 
+
+Order for Variables definition precedence:
+1) Environment Variables
+	TF_VAR_<variable_name>="value"
+2) path4cloud.tfvars
+3) *.auto.tfvars (*.auto.json)
+4) -var or -var-file
