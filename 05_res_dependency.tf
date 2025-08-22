@@ -1,26 +1,26 @@
-resource local_file depend_file {
-    filename = "E:/Path4Cloud Trainings/OpenTofu/demo/depend.txt"
-    content = "Here we are learning explicit dependency"
+resource "local_file" "depend_file" {
+  filename = "E:/Path4Cloud Trainings/OpenTofu/demo/depend.txt"
+  content  = "Here we are learning explicit dependency"
 
-    depends_on = [
-        random_pet.my_pet
-    ]
+  depends_on = [
+    random_pet.my_pet
+  ]
 }
 
-resource random_pet my_pet {
-    prefix = "master"
-    length = 2
-    separator = "-"
+resource "random_pet" "my_pet" {
+  prefix    = "master"
+  length    = 3
+  separator = "-"
 }
 
 output "my_pet" {
-    value = random_pet.my_pet.id
+  value = random_pet.my_pet.id
 }
 
-resource "time_static" time{
+resource "time_static" "time" {
 
 }
 
 output "cur_time" {
-    value = time_static.time.id
+  value = time_static.time.id
 }
