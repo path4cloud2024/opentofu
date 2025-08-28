@@ -60,31 +60,26 @@ It is fully open-source and designed to remain **open, stable, and community-dri
 ### **Phase 1: Foundation**
 - [x] Set up OpenTofu project structure
 - [x] Add network, compute, and storage modules
-- [ ] Configure development environment
+- [x] Configure development environment
 
 ### **Phase 2: CI/CD Integration**
-- [ ] Integrate with GitHub Actions for automated plans
-- [ ] Add linting & policy checks (e.g., Checkov, tfsec)
+- [x] Integrate with GitHub Actions for automated plans
+- [x] Add linting & policy checks (e.g., Checkov, tfsec)
 
 ### **Phase 3: Multi-Cloud Support**
-- [ ] Expand modules for Azure and GCP
-- [ ] Add secrets management integration (e.g., Vault, SSM)
+- [x] Expand modules for Azure and GCP
+- [x] Add secrets management integration (e.g., Vault, SSM)
 
 ### **Phase 4: Production-Ready**
-- [ ] Implement state locking with remote backends
-- [ ] Add monitoring & alerting infrastructure
-- [ ] Conduct security & compliance audits
+- [x] Implement state locking with remote backends
+- [x] Add monitoring & alerting infrastructure
+- [x] Conduct security & compliance audits
 
 ---
 
 ## Contributing
 Contributions are welcome!  
 Please open an issue or submit a pull request following the repository's contribution guidelines.
-
----
-
-## License
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
