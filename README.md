@@ -17,8 +17,6 @@ It is fully open-source and designed to remain **open, stable, and community-dri
 
 ---
 
----
-
 ## Getting Started
 
 ### Prerequisites
